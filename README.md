@@ -14,14 +14,16 @@ Summary: Cramer-Von Mises and Anderson-Darling tests of goodness-of-fit for cont
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-goftest-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-goftest-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-goftest-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-goftest-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-goftest-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-goftest-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-goftest-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-goftest-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-goftest-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-goftest-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-goftest-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-goftest-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-goftest/badges/version.svg)](https://anaconda.org/conda-forge/r-goftest)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-goftest/badges/downloads.svg)](https://anaconda.org/conda-forge/r-goftest)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--goftest-green.svg)](https://anaconda.org/conda-forge/r-goftest) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-goftest.svg)](https://anaconda.org/conda-forge/r-goftest) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-goftest.svg)](https://anaconda.org/conda-forge/r-goftest) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-goftest.svg)](https://anaconda.org/conda-forge/r-goftest) |
 
 Installing r-goftest
 ====================
@@ -66,6 +68,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
