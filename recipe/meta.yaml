@@ -38,8 +38,6 @@ test:
   commands:
     - $R -e "library('goftest')"           # [not win]
     - "\"%R%\" -e \"library('goftest')\""  # [win]
-    - conda inspect linkages -p $PREFIX r-goftest  # [not win]
-    - conda inspect objects -p $PREFIX r-goftest  # [osx]
 
 
 about:
