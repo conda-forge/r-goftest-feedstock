@@ -19,7 +19,7 @@ build:
     - lib/R/lib/
     - lib/
 
-requirements:
+equirements:
   build:
     - {{ compiler('c') }}              # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
@@ -28,6 +28,7 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
   run:
@@ -39,10 +40,9 @@ test:
     - $R -e "library('goftest')"           # [not win]
     - "\"%R%\" -e \"library('goftest')\""  # [win]
 
-
 about:
   home: https://github.com/baddstats/goftest
-  license: GPL-2
+  license: GPL-2.0-or-later
   summary: Cramer-Von Mises and Anderson-Darling tests of goodness-of-fit for continuous univariate distributions, using efficient algorithms.
   license_family: GPL2
   license_file:
