@@ -19,7 +19,7 @@ build:
     - lib/R/lib/
     - lib/
 
-equirements:
+requirements:
   build:
     - {{ compiler('c') }}              # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
